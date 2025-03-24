@@ -1,0 +1,99 @@
+/* Define color variables */
+:root {
+    --primary-color: #CFCFEA;
+    --secondary-color: #59ffa0;
+    --accent1-color: #016fb9;
+    --accent2-color: #d90368;
+}
+
+/* Apply global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+/* Header styles */
+header {
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Hero section */
+.hero {
+    position: relative; /* Required for absolute positioning inside */
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Article inside hero */
+article {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 60%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Fix: Float image to the right inside the article */
+article img {
+    float: right;
+    width: 120px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Fix: Ensure only social media links have no text-decoration */
+footer a img {
+    width: 30px;
+    margin: 5px;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+}
