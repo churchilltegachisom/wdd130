@@ -69,9 +69,40 @@ nav ul li a:hover {
 /* Employee Profiles Section */
 .employee-gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Increased number of columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
 .employee-gallery figure {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.employee-gallery img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.employee-gallery figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2a3d34;
+}
+
+/* Contact Form Section */
+.contact-form form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
