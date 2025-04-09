@@ -53,94 +53,25 @@ nav ul li a:hover {
     color: #0a7b7a;
 }
 
-/* Hero Section */
-.hero {
-    position: relative;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-/* History Section */
-.history {
+/* Contact Section */
+.contact-info {
     padding: 20px;
     background-color: #ffffff;
     margin: 20px 0;
 }
 
-.history h2 {
-    color: #2a3d34;
+.contact-info iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
 }
 
-/* Adventure Section */
-.adventure {
-    padding: 20px;
-    background-color: #ffffff;
-}
-
-.adventure h2 {
-    color: #2a3d34;
-}
-
-.gallery {
+/* Employee Profiles Section */
+.employee-gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* Increased number of columns */
     gap: 15px;
 }
 
-figure {
+.employee-gallery figure {
     text-align: center;
-}
-
-figure img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-figcaption {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #2a3d34;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #2a3d34;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-footer .social-links {
-    margin-top: 10px;
-}
-
-footer .social-links a {
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-footer .social-links img {
-    width: 30px;
-    height: 30px;
-}
-
-footer .social-links a:hover {
-    opacity: 0.7;
-}

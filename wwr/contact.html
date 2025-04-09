@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with White Water Rafting. Contact us for questions, reservations, and suggestions through phone, email, or our online form.">
+  <meta name="author" content="Churchill Tega Chisom">
+  <title>Contact Us - White Water Rafting</title>
+  <link rel="stylesheet" href="styles/rafting.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="images/logo.jpg" alt="White Water Rafting Logo">
+    <h1>White Water Rafting</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Company Contact Information Section -->
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <p>📍 123 River Road, Bayelsa State, Nigeria</p>
+      <p>📞 +234 9055936450</p>
+      <p>✉️ churchilltega555@gmail.com</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126739.88563877528!2d-116.21460605058859!3d43.615018559136854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef874206a59cb%3A0xc3c4f07b113d2f96!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1615151068697!5m2!1sen!2sus"
+        width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <!-- Employee Profiles Section -->
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <div class="employee-gallery">
+        <figure>
+          <img src="images/employee1.jpg" alt="John - Rafting Guide">
+          <figcaption>Churchill Tega Chisom - Senior Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Samantha - Customer Support">
+          <figcaption>Obianife Nwachukwu Emmanuel - Support Manager</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Carlos - Trip Coordinator">
+          <figcaption>Churchill Irene Ufuoma - Trip Coordinator</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="YOUR_SERVER_ENDPOINT" method="POST">
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <p>Purpose of Message:</p>
+        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
+        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label><br>
+
+        <button type="submit">Submit Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 White Water Rafting | Designed by Churchill Tega Chisom</p>
+    <div class="social-links">
+      <a href="#"><img src="images/facebook_icon.jpg" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter_icon.jpg" alt="Twitter"></a>
+      <a href="#"><img src="images/instagram_icon.jpg" alt="Instagram"></a>
+    </div>
+    <p><a href="images/contact-wireframe.jpg" target="_blank">View Contact Page Wireframe</a></p>
+  </footer>
+</body>
+</html>

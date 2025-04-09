@@ -144,3 +144,87 @@ footer .social-links img {
 footer .social-links a:hover {
     opacity: 0.7;
 }
+
+/* ===== Contact Page Styles ===== */
+
+.contact-info {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.contact-info a {
+    color: #0a7b7a;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.employees {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.employees figure {
+    text-align: center;
+    margin: 1rem;
+}
+
+.employees img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005fa3;
+}
