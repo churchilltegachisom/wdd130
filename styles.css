@@ -1,108 +1,262 @@
-/* Global Styles */
+/* Reset & Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
 }
 
-h1, h2 {
-    color: #2a3d34;
+h1, h2, h3 {
+    margin: 0 0 10px;
+    font-weight: 600;
 }
 
-/* Header Styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
 header {
-    display: grid;
-    grid-template-columns: 150px auto 1fr; /* Logo, Heading, Navigation */
+    background-color: #0a7b7a;
+    color: white;
     padding: 20px;
-    background-color: #fff;
+    display: flex;
     align-items: center;
-    border-bottom: 2px solid #ddd;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 header img {
-    max-width: 100%;
-    height: auto;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 50%;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    color: #2a3d34;
+    font-size: 1.8rem;
+    margin-right: auto;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
-    justify-content: flex-end;
+    gap: 20px;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #2a3d34;
+nav a {
+    color: white;
     font-weight: bold;
-    padding: 10px;
 }
 
-nav ul li a:hover {
-    color: #0a7b7a;
+nav a:hover {
+    text-decoration: underline;
 }
 
-/* Contact Section */
-.contact-info {
-    padding: 20px;
-    background-color: #ffffff;
-    margin: 20px 0;
-}
-
-.contact-info iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-}
-
-/* Employee Profiles Section */
-.employee-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-}
-
-.employee-gallery figure {
+/* CTA Section (Trips Page) */
+.cta {
+    background-color: #e6f7f7;
     text-align: center;
+    padding: 50px 20px;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
-.employee-gallery img {
+.cta-button {
+    background-color: #0a7b7a;
+    color: white;
+    padding: 12px 20px;
     border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #065f5e;
+}
+
+/* Trip Descriptions Grid */
+.trip-descriptions {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.trip-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.trip {
+    flex: 1 1 30%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.trip img {
     width: 100%;
     height: auto;
-}
-
-.employee-gallery figcaption {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #2a3d34;
-}
-
-/* Contact Form Section */
-.contact-form form {
-    background-color: #fff;
-    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form input, 
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+.trip-button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #0a7b7a;
+    color: white;
     border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.trip-button:hover {
+    background-color: #065f5e;
+}
+
+/* Trip Table */
+.trip-info-table {
+    padding: 40px 20px;
+    background-color: #e9ecef;
+}
+
+.trip-info-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.trip-info-table th,
+.trip-info-table td {
     border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.trip-info-table th {
+    background-color: #0a7b7a;
+    color: white;
+}
+
+/* Contact Page Sections */
+.contact-info, .employees, .contact-form {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+
+.map-container {
+    margin-top: 20px;
+}
+
+.employee-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.employee-gallery figure {
+    flex: 1 1 30%;
+}
+
+.employee-gallery img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label,
+.contact-form p {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.newsletter {
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #0a7b7a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #065f5e;
+}
+
+/* Footer */
+footer {
+    background-color: #0a7b7a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    margin: 0 10px;
 }

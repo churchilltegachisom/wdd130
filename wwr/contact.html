@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Get in touch with White Water Rafting. Contact us for questions, reservations, and suggestions through phone, email, or our online form.">
-  <meta name="author" content="Churchill Tega Chisom">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with White Water Rafting. Contact us for questions, reservations, and suggestions through phone, email, or our online form." />
+  <meta name="author" content="Churchill Tega Chisom" />
   <title>Contact Us - White Water Rafting</title>
-  <link rel="stylesheet" href="styles/rafting.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <img src="images/logo.jpg" alt="White Water Rafting Logo">
+    <img src="images/logo.jpg" alt="White Water Rafting Logo" />
     <h1>White Water Rafting</h1>
     <nav>
       <ul>
@@ -24,7 +24,7 @@
   </header>
 
   <main>
-    <!-- Company Contact Information Section -->
+    <!-- Contact Info -->
     <section class="contact-info">
       <h2>Contact Information</h2>
       <p>📍 123 River Road, Bayelsa State, Nigeria</p>
@@ -36,44 +36,48 @@
       </iframe>
     </section>
 
-    <!-- Employee Profiles Section -->
+    <!-- Employees -->
     <section class="employees">
       <h2>Meet Our Team</h2>
       <div class="employee-gallery">
         <figure>
-          <img src="images/employee1.jpg" alt="Tega Churchill - Rafting Guide">
+          <img src="images/employee1.jpg" alt="Churchill Tega Chisom - Senior Guide" />
           <figcaption>Churchill Tega Chisom - Senior Guide</figcaption>
         </figure>
         <figure>
-          <img src="images/employee2.jpg" alt="Emmanuel Nwachukwu - Customer Support">
+          <img src="images/employee2.jpg" alt="Obianife Nwachukwu Emmanuel - Support Manager" />
           <figcaption>Obianife Nwachukwu Emmanuel - Support Manager</figcaption>
         </figure>
         <figure>
-          <img src="images/employee3.jpg" alt="Irene Churchill - Trip Coordinator">
+          <img src="images/employee3.jpg" alt="Churchill Irene Ufuoma - Trip Coordinator" />
           <figcaption>Churchill Irene Ufuoma - Trip Coordinator</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- Contact Form Section -->
+    <!-- Contact Form -->
     <section class="contact-form">
       <h2>Send Us a Message</h2>
       <form action="YOUR_SERVER_ENDPOINT" method="POST">
         <label for="username">Name:</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="username" required />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required />
 
         <p>Purpose of Message:</p>
-        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
-        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label><br>
+        <div class="radio-group">
+          <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="reservation" /> Reservation Question</label>
+          <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
+        </div>
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label><br>
+        <label class="newsletter">
+          <input type="checkbox" name="subscribe" /> Please subscribe me to the monthly newsletter
+        </label>
 
         <button type="submit">Submit Message</button>
       </form>
@@ -83,9 +87,9 @@
   <footer>
     <p>&copy; 2025 White Water Rafting | Designed by Churchill Tega Chisom</p>
     <div class="social-links">
-      <a href="#"><img src="images/facebook_icon.jpg" alt="Facebook"></a>
-      <a href="#"><img src="images/twitter_icon.jpg" alt="Twitter"></a>
-      <a href="#"><img src="images/instagram_icon.jpg" alt="Instagram"></a>
+      <a href="#"><img src="images/facebook_icon.jpg" alt="Facebook Icon" /></a>
+      <a href="#"><img src="images/twitter_icon.jpg" alt="Twitter Icon" /></a>
+      <a href="#"><img src="images/instagram_icon.jpg" alt="Instagram Icon" /></a>
     </div>
     <p><a href="wireframe.html" target="_blank">View Contact Page Wireframe</a></p>
   </footer>
